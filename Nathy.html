@@ -26,6 +26,10 @@
 		src:url("Fonts/Angel Tears/Angel_Tears.otf");
 	}
 
+@font-face{
+		font-family: "modeka";
+		src:url("Fonts/Modeka/Modeka.otf");
+	}
 	body{
 		margin: 0;
 		padding: 0;
@@ -36,14 +40,13 @@
 		width: 100%;
 		height: 100%; 
 		position: fixed;
-		background-color: rgb(80,80,80);
-		background-image: url("Images/FondoPrincipal2.jpg");
+		background-color: rgb(240,240,240);
 	}
 
 	#header{
 		width: 100%;
 		height: 60px;
-		background-color: rgba(136,136,136,0.6);
+		background-color: rgb(0,116,217);
 		font-family: "remachineScript";
 		font-size: 50px;
 		color: white;
@@ -73,7 +76,10 @@
 		position: absolute;
 		width: 400px;
 		height: 200px;
-		box-shadow: 0px 0px 15px 5px white inset;
+		box-shadow: 0px 0px 5px 1px white inset;
+		font-family: "modeka";
+		font-size: 75px;
+		line-height: 75px;
 	}
 
 	.figura div img{
@@ -84,11 +90,13 @@
 		height: 80%;
 		opacity: 1;
 		border-radius: 0px;
+		border: 1px solid white;
+		box-shadow: 0px 0px 5px 2px rgb(75,75,75);
 	}
 
 	.one{		
 		transform:rotateY(0deg) translateZ(360px);
-		background-color: rgba(0,31,63,0.5);
+		background-color: rgba(0,31,63,0.7);
 		animation:arribaAbajoOne 3s infinite;
 	}
 
@@ -109,9 +117,7 @@
 
 	.two{
 		transform:rotateY(60deg) translateZ(360px);
-		background-color: rgba(133,20,75,0.5);
-		font-size: 100px;
-		font-family: "angelTears";
+		background-color: rgba(133,20,75,0.7);
 		animation:arribaAbajoTwo 3s infinite;
 		animation-delay: -2s;
 	}
@@ -132,7 +138,7 @@
 
 	.three{		
 		transform:rotateY(120deg) translateZ(360px);
-		background-color: rgba(255,65,54,0.5);
+		background-color: rgba(255,65,54,0.7);
 		animation:arribaAbajoThree 3s infinite;
 	}
 
@@ -152,9 +158,7 @@
 
 	.four{
 		transform:rotateY(180deg) translateZ(360px);
-		background-color: rgba(255,133,27,0.5);
-		font-family: "28DaysLater";
-		font-size: 90px;
+		background-color: rgba(61,153,112,0.7);
 		animation:arribaAbajoFour 3s infinite;
 		animation-delay: -1.5s;
 	}
@@ -175,7 +179,7 @@
 
 	.five{
 		transform:rotateY(240deg) translateZ(360px);
-		background-color: rgba(61,153,112,0.5);
+		background-color: rgba(46,204,64,0.7);
 		animation:arribaAbajoFive 3s infinite;
 		animation-delay: -0.5s;
 	}
@@ -196,7 +200,7 @@
 
 	.six{
 		transform:rotateY(300deg) translateZ(360px);
-		background-color: rgba(46,204,64,0.5);
+		background-color: rgba(0,116,217,0.7);
 		animation:arribaAbajoSix 3s infinite;
 		animation-delay: -1s;
 	}
@@ -242,7 +246,7 @@
     }
 
     .boton:hover{
-    	background-color: rgba(0,31,63,0.7);
+    	background-color: rgb(133,20,75);
     	border: 2px solid white;
     }   
 
@@ -275,11 +279,11 @@
 		<div id="contenedor">
 			<div id="carrusel" class="figura">
 				<div class="one"><img src="Images/1.jpg" alt="Santy y Naty" ></div>
-				<div class="two">Te quiero mucho princesa</div>
+				<div class="two">Feliz primer mes</div>
 				<div class="three"><img src="Images/2.jpg" alt="Santy y Naty" ></div>
-				<div class="four">U and ME 4EVER</div>
-				<div class="five"></div>
-				<div class="six"></div>
+				<div class="four">Te amo princesa</div>
+				<div class="five"><img src="Images/3.jpg" alt="Santy y Naty" ></div>
+				<div class="six">Juntos por siempre</div>
 			</div>
 		</div>
 		<button id="btnAtras" class="boton"><i class="material-icons iconSize48 iconColorGray">keyboard_arrow_left</i></button>
