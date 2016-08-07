@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<style type="text/css">
+
+	@font-face{
+		font-family: "tangerineRegular";
+		src:url("Fonts/Tangerine/Tangerine_Regular.ttf");
+	}
+
+	@font-face{
+		font-family: "28DaysLater";
+		src:url("Fonts/28 Days Later/28 Days Later.ttf");
+	}
+
+	@font-face{
+		font-family: "remachineScript";
+		src:url("Fonts/Remachine Script/RemachineScript_Personal_Use.ttf");
+	}
+
+	@font-face{
+		font-family: "angelTears";
+		src:url("Fonts/Angel Tears/Angel_Tears.otf");
+	}
+
+	body{
+		margin: 0;
+		padding: 0;
+		height: 100%;
+	}
+
+	#principal{
+		width: 100%;
+		height: 100%; 
+		position: fixed;
+		background-color: rgb(80,80,80);
+		background-image: url("Images/FondoPrincipal2.jpg");
+	}
+
+	#header{
+		width: 100%;
+		height: 60px;
+		background-color: rgba(136,136,136,0.6);
+		font-family: "remachineScript";
+		font-size: 50px;
+		color: white;
+		padding-left: 80px;
+	}
+
+	#contenedor{
+		margin: auto;
+		width: 400px;
+		height: 200px;
+		perspective: 1100px;
+		perspective-origin: 50% -150px;
+	}
+
+	.figura{
+		margin-top: 100px;
+		width: 400px;
+		height: 200px;
+		position: relative;
+		text-align: center;
+		color: rgba(255,255,255,1);
+		transform-style: preserve-3d;
+		transition: transform 1.5s;
+	}
+
+	.figura div{
+		position: absolute;
+		width: 400px;
+		height: 200px;
+		box-shadow: 0px 0px 15px 5px white inset;
+	}
+
+	.figura div img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;	
+		height: 80%;
+		opacity: 1;
+		border-radius: 0px;
+	}
+
+	.one{		
+		transform:rotateY(0deg) translateZ(360px);
+		background-color: rgba(0,31,63,0.5);
+		animation:arribaAbajoOne 3s infinite;
+	}
+
+
+	@keyframes arribaAbajoOne{
+		0%{
+			transform: translateY(15px) rotateY(0deg) translateZ(360px);
+			transition-timing-function: ease-in;
+		}
+		50%{
+			transform: translateY(-15px) rotateY(0deg) translateZ(360px);
+			transition-timing-function: ease-in;
+		}
+		100%{
+			transform: translateY(15px) rotateY(0deg) translateZ(360px);
+		}
+	}
+
+	.two{
+		transform:rotateY(60deg) translateZ(360px);
+		background-color: rgba(133,20,75,0.5);
+		font-size: 100px;
+		font-family: "angelTears";
+		animation:arribaAbajoTwo 3s infinite;
+		animation-delay: -2s;
+	}
+
+	@keyframes arribaAbajoTwo{
+		0%{
+			transform: translateY(15px) rotateY(60deg) translateZ(360px);
+			transition-timing-function: ease-in;
+		}
+		50%{
+			transform: translateY(-15px) rotateY(60deg) translateZ(360px);
+			transition-timing-function: ease-in;
+		}
+		100%{
+			transform: translateY(15px) rotateY(60deg) translateZ(360px);
+		}
+	}
+
+	.three{		
+		transform:rotateY(120deg) translateZ(360px);
+		background-color: rgba(255,65,54,0.5);
+		animation:arribaAbajoThree 3s infinite;
+	}
+
+	@keyframes arribaAbajoThree{
+		0%{
+			transform: translateY(15px) rotateY(120deg) translateZ(360px);
+			transition-timing-function: ease-in;
+		}
+		50%{
+			transform: translateY(-15px) rotateY(120deg) translateZ(360px);
+			transition-timing-function: ease-in;
+		}
+		100%{
+			transform: translateY(15px) rotateY(120deg) translateZ(360px);
+		}
+	}
+
+	.four{
+		transform:rotateY(180deg) translateZ(360px);
+		background-color: rgba(255,133,27,0.5);
+		font-family: "28DaysLater";
+		font-size: 90px;
+		animation:arribaAbajoFour 3s infinite;
+		animation-delay: -1.5s;
+	}
+
+	@keyframes arribaAbajoFour{
+		0%{
+			transform: translateY(15px) rotateY(180deg) translateZ(360px);
+			transition-timing-function: ease-in;
+		}
+		50%{
+			transform: translateY(-15px) rotateY(180deg) translateZ(360px);
+			transition-timing-function: ease-in;
+		}
+		100%{
+			transform: translateY(15px) rotateY(180deg) translateZ(360px);
+		}
+	}
+
+	.five{
+		transform:rotateY(240deg) translateZ(360px);
+		background-color: rgba(61,153,112,0.5);
+		animation:arribaAbajoFive 3s infinite;
+		animation-delay: -0.5s;
+	}
+
+	@keyframes arribaAbajoFive{
+		0%{
+			transform: translateY(15px) rotateY(240deg) translateZ(360px);
+			transition-timing-function: ease-in;
+		}
+		50%{
+			transform: translateY(-15px) rotateY(240deg) translateZ(360px);
+			transition-timing-function: ease-in;
+		}
+		100%{
+			transform: translateY(15px) rotateY(240deg) translateZ(360px);
+		}
+	}
+
+	.six{
+		transform:rotateY(300deg) translateZ(360px);
+		background-color: rgba(46,204,64,0.5);
+		animation:arribaAbajoSix 3s infinite;
+		animation-delay: -1s;
+	}
+
+	@keyframes arribaAbajoSix{
+		0%{
+			transform: translateY(15px) rotateY(300deg) translateZ(360px);
+			transition-timing-function: ease-in;
+		}
+		50%{
+			transform: translateY(-15px) rotateY(300deg) translateZ(360px);
+			transition-timing-function: ease-in;
+		}
+		100%{
+			transform: translateY(15px) rotateY(300deg) translateZ(360px);
+		}
+	}
+
+	#navLinks ul {
+        display: inline-block;
+        margin-top: 0 auto;
+    }
+        #navLinks ul li {
+        	padding: 20px;
+            float: left;
+            text-align: center;
+            margin: 5px;
+            list-style: none;
+            cursor: pointer;
+            background-color: rgb(240,240,240);
+            border: black 1px solid;
+        }
+
+    .boton{
+    	position: absolute;
+    	background-color: transparent;
+	    border: 2px solid #888;
+	    height: 60px;
+	    top: 290px;
+	    width: 70px;
+	    cursor: pointer;
+	    transition: background-color 0.5s linear,border 0.5s linear;
+    }
+
+    .boton:hover{
+    	background-color: rgba(0,31,63,0.7);
+    	border: 2px solid white;
+    }   
+
+    #btnAdelante{
+    	right: 100px;
+    }
+    #btnAtras{
+    	left: 100px;
+    }
+
+    .iconColorGray{
+    	transition:color 0.5s linear;
+    	color: #888	;
+    }
+
+    .iconSize48{
+    	font-size:48px!important; 
+    }
+
+     .boton:hover > .iconColorGray{
+    	color:white;
+    }
+    
+</style>
+<body>
+	<div id="principal">
+		<div id="header">
+			Santi y Nathy
+		</div>
+		<div id="contenedor">
+			<div id="carrusel" class="figura">
+				<div class="one"><img src="Images/1.jpg" alt="Santy y Naty" ></div>
+				<div class="two">Te quiero mucho princesa</div>
+				<div class="three"><img src="Images/2.jpg" alt="Santy y Naty" ></div>
+				<div class="four">U and ME 4EVER</div>
+				<div class="five"></div>
+				<div class="six"></div>
+			</div>
+		</div>
+		<button id="btnAtras" class="boton"><i class="material-icons iconSize48 iconColorGray">keyboard_arrow_left</i></button>
+		<button id="btnAdelante" class="boton"><i class="material-icons iconSize48 iconColorGray">keyboard_arrow_right</i></button>
+	</div>
+
+	<script type="text/javascript">
+		var btnAdelante=document.querySelector("#btnAdelante");
+		var btnAtras=document.querySelector("#btnAtras");
+		var carrusel=document.querySelector("#carrusel");
+		var deg=0;
+
+		btnAdelante.addEventListener('click',moverAdelante,false);
+		btnAtras.addEventListener('click',moverAtras,false);
+		
+		function moverAdelante(e){
+			deg=deg-60;
+			carrusel.style[transformProperty]="rotateY("+deg+"deg)";
+		}
+
+		function moverAtras(e){
+			deg=deg+60;
+			carrusel.style[transformProperty]="rotateY("+deg+"deg)";
+		}
+
+
+		var transforms = ["transform",
+	        "msTransform",
+	        "webkitTransform",
+	        "mozTransform",
+	        "oTransform"];
+
+	    var transformProperty = getSupportedPropertyName(transforms);
+
+	    function getSupportedPropertyName(properties) {
+	        for (var i = 0; i < properties.length; i++) {
+	            if (typeof document.body.style[properties[i]] != "undefined") {
+	                return properties[i];
+	            }
+	        }
+	        return null;
+	    }
+
+	    /*var timeoutID;
+
+	    function startTimer() {
+	        timeoutID = window.setInterval(moverAutomatico, 3000);
+	    }
+	    startTimer();
+
+	    function resetTimer() {
+	        window.clearInterval(timeoutID);
+	        startTimer();
+	    }
+
+	    function moverAutomatico() {
+	    	deg=deg-60;
+			carrusel.style[transformProperty]="rotateY("+deg+"deg)";
+	    }*/
+	</script>	
+</body>
+</html>
